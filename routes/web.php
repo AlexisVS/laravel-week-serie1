@@ -15,3 +15,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/alexis', function () {
     $name = 'Alexis';
     return "<h2>${name}</h2>";});
+
+Route::get('/{nombre}', function ($nombre) {
+    return view("welcome", compact("nombre"));
+});
