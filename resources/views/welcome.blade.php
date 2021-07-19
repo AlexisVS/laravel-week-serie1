@@ -9,12 +9,14 @@
 </head>
 
 <body>
+    @include("partials.header")
+
     <h2>
         @if (is_numeric($nombre))
 
-        {{ $nombre * 25 }}
+            {{ $nombre * 25 }}
         @else
-        {{ $nombre }} N'est pas un nombre
+            {{ $nombre }} N'est pas un nombre
         @endif
     </h2>
 </body>

@@ -27,3 +27,7 @@ Route::get('/exo3', function () {
 Route::get('/{nombre}', function ($nombre) {
     return view("welcome", compact("nombre"));
 });
+
+Route::get('/couleur/{color}', function($color) {
+    return view('couleur', compact("color"));
+});
